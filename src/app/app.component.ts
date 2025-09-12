@@ -18,11 +18,12 @@ interface Menu {
 })
 export class AppComponent {
   public menuList: Menu[] = [
-    {title: 'Pacientes', route: '/patients', isCurrent: false},
-    {title: 'Médico', route: '/medics', isCurrent: false},
-    {title: 'Consultas', route: '/consultations', isCurrent: false}
+    {title: 'Pacientes', route: '/patient', isCurrent: false},
+    {title: 'Médico', route: '/medic', isCurrent: false},
+    {title: 'Consultas', route: '/consultation', isCurrent: false}
   ]
   public router: Router = new Router();
+
   constructor() {
     this.changeMenu(this.menuList[0]);
   }
