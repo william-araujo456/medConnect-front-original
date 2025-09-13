@@ -5,7 +5,7 @@ import {
 } from '@angular/material/table';
 import {DatePipe, NgClass} from '@angular/common';
 import {MatCard} from '@angular/material/card';
-import {Medic} from '../../shared/models/medic';
+import {User} from '../../shared/models/user';
 import {HttpClient} from '@angular/common/http';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
@@ -21,10 +21,10 @@ import {MatDialog} from '@angular/material/dialog';
     MatIconModule,
     MatButtonModule
   ],
-  templateUrl: './medic.component.html',
-  styleUrl: './medic.component.scss'
+  templateUrl: './user.component.html',
+  styleUrl: './user.component.scss'
 })
-export class MedicComponent {
-  public displayedColumns: string[] = ['id', 'name', 'crm', 'specialization'];
-  public dataSource = new MatTableDataSource<Medic>();
+export class UserComponent {
+  public displayedColumns: string[] = ['id', 'name','date_birth', 'created_at', 'modified_at', 'active'];
+  public dataSource = new MatTableDataSource<User>();
 }

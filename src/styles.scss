@@ -34,14 +34,18 @@ table {
   }
 }
 
+img {
+  max-width: 40px;
+}
+
 .menu {
-  background-color: #3d7a90 !important;
-  color: #1e1f22 !important;
+  background-color: #2C6975 !important;
+  color: #FFFFFF !important;
 }
 
 .menu-btn:not(:disabled) {
-  background-color: #1e1f22 !important;
-  color: #3d7a90 !important;
+  background-color: #88B04B !important;
+  color: #FFFFFF !important;
 }
 
 .btn-default:not(:disabled) {

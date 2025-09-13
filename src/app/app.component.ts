@@ -18,9 +18,8 @@ interface Menu {
 })
 export class AppComponent {
   public menuList: Menu[] = [
-    {title: 'Pacientes', route: '/patient', isCurrent: false},
-    {title: 'Médico', route: '/medic', isCurrent: false},
-    {title: 'Consultas', route: '/consultation', isCurrent: false}
+    {title: 'Usuário', route: '/user', isCurrent: false},
+    {title: 'Médico', route: '/medic', isCurrent: false}
   ]
   public router: Router = new Router();
 
